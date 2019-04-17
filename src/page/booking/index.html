@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>预约体验</title>
+</head>
+
+<body>
+  <div class="other-header">
+    <%= require('@/components/header.html') %>
+  </div>
+  <!-- banner -->
+  <div class="banner">
+    <div class="banner-left">
+      <img class="banner-img" src="<%= require('@/assets/image/booking/banner.png') %>" alt="">
+    </div>
+    <div class="banner-right">
+      <div class="title">免费预约价值298元体验课</div>
+      <div>
+        <div class="desc">轻松好玩的编程体验</div>
+        <div class="desc">免费的专家指导、能力潜力测评</div>
+        <div class="desc">覆盖20余座城市的50余家校区，方便体验</div>
+      </div>
+      <div class="xm-btn booking-btn">预约免费体验课</div>
+    </div>
+  </div>
+  <!-- 体验课预约 -->
+  <div class="booking-content">
+    <div class="title">体验课预约</div>
+    <div class="desc">你的一次尝试，也许就改变了孩子的一生</div>
+  </div>
+  <!-- card -->
+  <div class="game-card">
+    <div class="game-card-left">
+      <img class="game-cover" src="<%= require('@/assets/image/booking/game-cover1.png') %>" alt="">
+    </div>
+    <div class="game-card-right">
+      <div class="game-title-line">
+        <div class="game-title">双人竞技赛车</div>
+        <div class="hard-level">
+          <span>难度系数</span>
+          <img class="game-cover" src="<%= require('@/assets/image/booking/star-on.png') %>" alt="">
+          <img class="game-cover" src="<%= require('@/assets/image/booking/star-on.png') %>" alt="">
+          <img class="game-cover" src="<%= require('@/assets/image/booking/star-on.png') %>" alt="">
+          <img class="game-cover" src="<%= require('@/assets/image/booking/star-off.png') %>" alt="">
+          <img class="game-cover" src="<%= require('@/assets/image/booking/star-off.png') %>" alt="">
+        </div>
+      </div>
+      <div class="game-desc">
+        轻点开始按钮，一阵阵轰隆的引擎声，轮胎摩擦的吱吱声。3、2、1如离弦之箭，两辆赛车开始了一场追逐赛。究竟谁能获得最后的胜利？想和你的朋友来一场较量吗？来感受这速度与激情吧！
+      </div>
+      <div class="booking-rightnow">
+        <div class="apply-line">
+          <img src="<%= require('@/assets/image/booking/hot.png') %>" alt="">
+          <span>已有7354人已报名</span>
+        </div>
+        <div class="xm-btn reserve">
+          立即预约
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+  <div class="game-card">
+    <div class="game-card-left">
+      <img class="game-cover" src="<%= require('@/assets/image/booking/game-cover2.png') %>" alt="">
+    </div>
+    <div class="game-card-right">
+      <div class="game-title-line">
+        <div class="game-title">我的世界</div>
+        <div class="hard-level">
+          <span>难度系数</span>
+          <img class="game-cover" src="<%= require('@/assets/image/booking/star-on.png') %>" alt="">
+          <img class="game-cover" src="<%= require('@/assets/image/booking/star-on.png') %>" alt="">
+          <img class="game-cover" src="<%= require('@/assets/image/booking/star-on.png') %>" alt="">
+          <img class="game-cover" src="<%= require('@/assets/image/booking/star-on.png') %>" alt="">
+          <img class="game-cover" src="<%= require('@/assets/image/booking/star-off.png') %>" alt="">
+        </div>
+      </div>
+      <div class="game-desc">
+          《我的世界》是一款大家熟悉的游戏，它以极高的自由度以及优秀的三维空间效果风靡全球。玩家可以在游戏中创建一个属于自己的世界，让你体验上帝一般的感觉！现在大家有机会揭开它的秘密，让我们一起编出一个属于自己的《我的世界》！
+      </div>
+      <div class="booking-rightnow">
+        <div class="apply-line">
+          <img src="<%= require('@/assets/image/booking/hot.png') %>" alt="">
+          <span>已有7354人已报名</span>
+        </div>
+        <div class="xm-btn reserve">
+          立即预约
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="game-card">
+    <div class="game-card-left">
+      <img class="game-cover" src="<%= require('@/assets/image/booking/game-cover3.png') %>" alt="">
+    </div>
+    <div class="game-card-right">
+      <div class="game-title-line">
+        <div class="game-title">锤子打僵尸</div>
+        <div class="hard-level">
+          <span>难度系数</span>
+          <img class="game-cover" src="<%= require('@/assets/image/booking/star-on.png') %>" alt="">
+          <img class="game-cover" src="<%= require('@/assets/image/booking/star-on.png') %>" alt="">
+          <img class="game-cover" src="<%= require('@/assets/image/booking/star-on.png') %>" alt="">
+          <img class="game-cover" src="<%= require('@/assets/image/booking/star-on.png') %>" alt="">
+          <img class="game-cover" src="<%= require('@/assets/image/booking/star-off.png') %>" alt="">
+        </div>
+      </div>
+      <div class="game-desc">
+          一夜之间，一种未知病毒在世界范围内快速传播。地球上出现了大批的僵尸，并且随着时间的推移，僵尸们衍生出了新的变异体。在某国的一个小镇里，还有最后一个幸存者躲在自己的农场中。“我要吃掉你的脑子！”一大波僵尸正在靠近，大家一定玩过“植物大战僵尸”吧？今天我们要把这个游戏做一个改编！
+      </div>
+      <div class="booking-rightnow">
+        <div class="apply-line">
+          <img src="<%= require('@/assets/image/booking/hot.png') %>" alt="">
+          <span>已有7354人已报名</span>
+        </div>
+        <div class="xm-btn reserve">
+          立即预约
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+  <div class="game-card">
+    <div class="game-card-left">
+      <img class="game-cover" src="<%= require('@/assets/image/booking/game-cover4.png') %>" alt="">
+    </div>
+    <div class="game-card-right">
+      <div class="game-title-line">
+        <div class="game-title">飞机大战</div>
+        <div class="hard-level">
+          <span>难度系数</span>
+          <img class="game-cover" src="<%= require('@/assets/image/booking/star-on.png') %>" alt="">
+          <img class="game-cover" src="<%= require('@/assets/image/booking/star-on.png') %>" alt="">
+          <img class="game-cover" src="<%= require('@/assets/image/booking/star-on.png') %>" alt="">
+          <img class="game-cover" src="<%= require('@/assets/image/booking/star-on.png') %>" alt="">
+          <img class="game-cover" src="<%= require('@/assets/image/booking/star-on.png') %>" alt="">
+        </div>
+      </div>
+      <div class="game-desc">
+          “滴滴滴......，求救求救，滴......”。为了刺探敌军情报，10032号特工深入敌军腹地。当他窃听到敌军准备偷袭艾泽拉斯基地的消息，并将情报传回总部时。身后传来一个声音，“不许动！”但消息还是传到了总部，总部派出救援的战机经过激烈战斗只剩下你，你能否将情报带回并成功救出特工10032？这一切是...
+      </div>
+      <div class="booking-rightnow">
+        <div class="apply-line">
+          <img src="<%= require('@/assets/image/booking/hot.png') %>" alt="">
+          <span>已有7354人已报名</span>
+        </div>
+        <div class="xm-btn reserve">
+          立即预约
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+  <div class="game-card">
+    <div class="game-card-left">
+      <img class="game-cover" src="<%= require('@/assets/image/booking/game-cover5.png') %>" alt="">
+    </div>
+    <div class="game-card-right">
+      <div class="game-title-line">
+        <div class="game-title">飞扬的小鸟</div>
+        <div class="hard-level">
+          <span>难度系数</span>
+          <img class="game-cover" src="<%= require('@/assets/image/booking/star-on.png') %>" alt="">
+          <img class="game-cover" src="<%= require('@/assets/image/booking/star-on.png') %>" alt="">
+          <img class="game-cover" src="<%= require('@/assets/image/booking/star-on.png') %>" alt="">
+          <img class="game-cover" src="<%= require('@/assets/image/booking/star-off.png') %>" alt="">
+          <img class="game-cover" src="<%= require('@/assets/image/booking/star-off.png') %>" alt="">
+        </div>
+      </div>
+      <div class="game-desc">
+          落日西沉，在森林中有一只迷路的小鸟，正在寻找回家的路，然而在寻路的过程中遇到了重重阻碍……又累又饿的它需要得到我们的鼓励与帮助。大家每帮它躲过一次障碍，它便能离家更近一步。谁能将它安全送回家呢？我们拭目以待！
+      </div>
+      <div class="booking-rightnow">
+        <div class="apply-line">
+          <img src="<%= require('@/assets/image/booking/hot.png') %>" alt="">
+          <span>已有7354人已报名</span>
+        </div>
+        <div class="xm-btn reserve">
+          立即预约
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+  <!-- card end -->
+  <!-- genius background -->
+  <div class="genius-bg">
+    <div class="question">你会是下一个编程小天才吗？</div>
+    <div class="waiting">我们还在等你，请你一定要来！</div>
+  </div>
+  <%= require('@/components/footer.html') %>
+  <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.14&key=cae8bafec875cf55d3f88610b8f11120"></script>
+</body>
+
+</html>

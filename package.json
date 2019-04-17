@@ -1,0 +1,104 @@
+{
+  "name": "xm_teach_pc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --config ./config/webpack.prod.js",
+    "build:test": "cross-env NODE_ENV=testing webpack --config ./config/webpack.prod.js",
+    "start": "webpack-dev-server --open --progress --config ./config/webpack.dev.js",
+    "lint": "eslint --fix src/**/*.js"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.42",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.46",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0-beta.42",
+    "@babel/plugin-transform-runtime": "^7.0.0-beta.46",
+    "@babel/preset-env": "^7.0.0-beta.42",
+    "autoprefixer": "^8.4.1",
+    "babel-eslint": "^8.2.5",
+    "babel-loader": "^8.0.0-beta.2",
+    "babel-polyfill": "^6.26.0",
+    "chalk": "^2.4.1",
+    "clean-webpack-plugin": "^1.0.0",
+    "copy-webpack-plugin": "^4.5.1",
+    "cross-env": "^5.1.4",
+    "css-loader": "^0.28.11",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-config-standard": "^12.0.0-alpha.0",
+    "eslint-loader": "^2.1.0",
+    "eslint-plugin-compat": "^3.1.1",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "file-loader": "^1.1.11",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^1.2.0",
+    "install": "^0.11.0",
+    "ip": "^1.1.5",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "lint-staged": "^8.1.5",
+    "mini-css-extract-plugin": "^0.2.0",
+    "optimize-css-assets-webpack-plugin": "^4.0.1",
+    "postcss-loader": "^2.1.5",
+    "prettier": "^1.16.4",
+    "sass-loader": "^7.1.0",
+    "shelljs": "^0.8.2",
+    "style-loader": "^0.20.3",
+    "terser-webpack-plugin": "^1.2.1",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.2.0",
+    "webpack-merge": "^4.1.4"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.0.0-beta.46",
+    "@createjs/build": "^2.0.0-beta.5",
+    "@createjs/core": "^2.0.0-beta.4",
+    "@createjs/easeljs": "^2.0.0-beta.4",
+    "@createjs/tweenjs": "^2.0.0-beta.4",
+    "axios": "^0.18.0",
+    "echarts": "^4.2.1",
+    "expose-loader": "^0.7.5",
+    "jquery": "^3.3.1",
+    "lodash": "^4.17.5",
+    "swiper": "^4.5.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "extends": [
+      "standard"
+    ]
+  },
+  "eslintIgnore": [
+    "src/static/**/*.js"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "prettier --tab-width 2 --write",
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}

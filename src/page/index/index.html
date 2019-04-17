@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.png" type="image/x-icon">
+  <title>自营官网</title>
+</head>
+
+<body>
+<div class="index-header">
+    <%= require('@/components/header.html') %>
+</div>
+<div class="main-video">
+    <div class="mask"></div>
+    <video  autoplay loop muted>
+        <source src="<%= require('@/assets/image/index/index.mp4') %>" type="video/mp4" />
+    </video>
+    <div class="main-h">
+        <h1>少儿编程就是{小码王}</h1>
+        <h3>立足线下 构建孩子面向未来的思维方式</h3>
+    </div>
+    <div class="video-bow"></div>
+</div>
+<div class="index-container programme">
+    <h3>为什么孩子要学编程？</h3>
+    <h4>人工智能时代，让孩子先人一步看见未来</h4>
+    <p>AI时代来临，很多工作将被人工智能取代，未来的人才必须具备学习与创新能力，而编程能让孩子站在这个时代的最前沿，具备未来社会所需的核心软实力。</p>
+    <div class="swiper swiper-con-01">
+        <div class="swiper01-bg"></div>
+        <div class="swiper-container swiper01">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide s01">
+                   <div class="name-wrap">
+                       <em>王江有</em>
+                       <span>小码王创始人及CEO</span>
+                   </div>
+                    <div class="point">
+                        编程是一种语言能力的学习，表达方式的培养和逻辑思维的锻炼， 编程这一语言，将在未来人工智能时代发挥越来越大的作用。
+                    </div>
+                </div>
+                <div class="swiper-slide s02">
+                    <!--<img src="<%= require('@/assets/image/index/slider02.png') %>" alt="">-->
+                </div>
+                <div class="swiper-slide s03">
+                    <!--<img src="<%= require('@/assets/image/index/slider03.png') %>" alt="">-->
+                </div>
+                <div class="swiper-slide s04">
+                    <!--<img src="<%= require('@/assets/image/index/slider04.png') %>" alt="">-->
+                </div>
+            </div>
+
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+
+    </div>
+</div>
+
+<div class="index-container ai">
+    <h4>人工智能时代，让孩子赢在起跑线</h4>
+    <p>学习编程，提升孩子的综合学科能力，帮助孩子轻松升入名校，把握未来机会，提高自身竞争力。</p>
+    <ul class="ai-list">
+        <li>
+            <img src="<%= require('@/assets/image/index/ai01.png') %>" alt="">
+            <i></i>
+            <em class="title">提高学习成绩</em>
+            <span class="text">编程语言只是工具，学编程最重要的是锻炼逻辑思维和解决问题的能力，这种学习能力能迁移到各个学科的学习上，从而全面提高孩子的数学、英语等学科成绩。</span>
+        </li>
+        <li>
+            <img src="<%= require('@/assets/image/index/ai02.png') %>" alt="">
+            <i></i>
+            <em class="title">升入名校</em>
+            <span class="text">拥有编程特长，可以参加全国中小学生电脑制作大赛、信奥赛等比赛，对孩子的小升初、中考、高考有帮助，在信奥赛省赛、国赛中获奖，可获高考降分优惠或保送资格。</span>
+        </li>
+        <li>
+            <img src="<%= require('@/assets/image/index/ai03.png') %>" alt="">
+            <i></i>
+            <em class="title">提升创造力</em>
+            <span class="text">创造力是人工智能时代重要的素质之一，而编程，是释放孩子想象力和创造力的良好工具。孩子用编程语言完成程序和作品的过程，是从0到1、从无到有的过程。</span>
+        </li>
+    </ul>
+</div>
+
+<div class="index-container choice">
+    <h4>为什么选择小码王？</h4>
+    <p>小码王——杰出的青少年科技教育培训机构，用专业的态度和教学服务，帮助孩子理解智能世界，驾驭未来世界。</p>
+</div>
+
+
+
+
+
+  <div style="margin-top:100px">
+    <span class="xm-btn">首页----1111</span>
+    <div class="game">
+      <canvas width="1280" height="485" id="SquirrelGame"></canvas>
+    </div>
+    <!--<div class="video">-->
+      <!--<video id="video1" autoplay loop muted style="margin-top:15px; width: 100% ; height: 100px;">-->
+        <!--<source src="<%= require('@/assets/bg.mp4') %>" type="video/mp4" />-->
+      <!--</video>-->
+    <!--</div>-->
+    <div class="code-jpg"></div>
+
+  </div>
+  <%= require('@/components/footer.html') %>
+</body>
+
+</html>

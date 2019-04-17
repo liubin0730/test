@@ -1,0 +1,135 @@
+@import './var.less';
+@import './header.less';
+@import './footer.less';
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+html{
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Microsoft YaHei', '微软雅黑', 'STXihei',
+    '华文黑体', Tahoma, Arial, Helvetica, sans-serif !important;
+    min-width: 1280px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix:after{
+    display: block;
+    content: '';
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
+.container-1248 {
+  width: 1248px;
+}
+.xm-btn {
+    display: inline-block;
+    background:linear-gradient(135deg,rgba(244,133,110,1) 0%,rgba(255,181,114,1) 100%);
+    border-radius:18px;
+    color: #FFFFFF;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+/* 美洽代码 */
+#MEIQIA-BTN{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    /*background: url(/img/meiqiabtn.jpg);
+    background-size: cover!important;*/
+    box-shadow: 0 0 20px rgba(80, 143, 250, .2);
+
+}
+#MEIQIA-BTN:hover{
+    box-shadow: 0 0 20px rgba(80, 143, 250, .5);
+}
+#MEIQIA-BTN::after{
+    content: '想学编程？问我们！';
+    display: block;
+    position: absolute;
+    width: 175px;
+    height: 28px;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    background: #fff;
+    color: #5a8ffa;
+    opacity: 1;
+    top: 20px;
+    left: -180px;
+    border-radius: 3px;
+    box-shadow: 0 0 20px rgba(80, 143, 250, .2);
+    z-index: -1;
+}
+#MEIQIA-BTN:hover::after{
+    opacity: 1;
+}
+#MEIQIA-BTN #MEIQIA-BTN-ICON{
+    width: 26px!important;
+    height: 28px!important;
+    background: url(../../assets/image/message.png)!important;
+    position: absolute;
+    top: 50%!important;
+    left: 50%!important;
+    transform: translate(-50%,-50%);
+    /*display: none;*/
+}
+#MEIQIA-BTN-LINE{
+    display: none;
+}
